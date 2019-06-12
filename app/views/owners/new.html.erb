@@ -1,0 +1,10 @@
+<h1>Add Owner</h1>
+<% form_with model: @owner do |form| %>
+	<p>First name: <%= form.text_field  :first_name %></p>
+	<p>Last name <%= form.text_field :last_name %></p>
+	<p>Occupation: <%= form.text_area :occupation %></p>
+  	<p>Image url: <%= form.text_field :img_url %></p>
+  	<p>Age: <%= form.number_field :age %></p>
+
+	<%= form.submit %>
+<% end -%>
